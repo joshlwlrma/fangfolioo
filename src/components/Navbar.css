@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap'); 
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  flex-wrap: wrap; 
+  justify-content: center; 
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap; 
+  justify-content: center; 
+}
+
+.nav-item {
+  margin: 0.5rem; 
+}
+
+.button {
+  width: 180px; 
+  padding: 0;
+  border: none;
+  transform-origin: center;
+  font-family: 'VT323', monospace;
+  text-decoration: none;
+  font-size: 30px; 
+  cursor: pointer;
+  padding-bottom: 3px;
+  
+  box-shadow: 0 2px 0 #494a4b;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  display: block;
+}
+
+.button span {
+  background: #f1f5f8;
+  display: block;
+  padding: 0.75rem 1.25rem; 
+  
+  border: 2px solid #494a4b;
+  color: #333; 
+  text-align: center;
+}
+
+.button:active {
+  transform: translateY(5px);
+  padding-bottom: 0px;
+  outline: 0;
+}
+
+
+
+.nav-item:nth-child(1) .button {
+  transform: rotate(-2deg);
+  background-color: #5cdb95; 
+}
+.nav-item:nth-child(1) .button:hover {
+  transform: rotate(-4deg) scale(1.1);
+}
+
+
+.nav-item:nth-child(2) .button {
+  transform: rotate(3deg);
+  background-color: #f59e0b; 
+}
+.nav-item:nth-child(2) .button:hover {
+  transform: rotate(5deg) scale(1.1);
+}
+
+
+.nav-item:nth-child(3) .button {
+  transform: rotate(-1deg);
+  background-color: #ef4444; 
+}
+.nav-item:nth-child(3) .button:hover {
+  transform: rotate(-3deg) scale(1.1);
+}
+
+
+.nav-item:nth-child(4) .button {
+  transform: rotate(2deg);
+  background-color: #8b5cf6; 
+}
+.nav-item:nth-child(4) .button:hover {
+  transform: rotate(4deg) scale(1.1);
+}
+
+
+
+.nav-logo-button {
+  padding: 0;
+  border: none;
+  transform: rotate(-3deg); 
+  transform-origin: center;
+  font-family: 'VT323', monospace;
+  text-decoration: none;
+  font-size: 40px; 
+  cursor: pointer;
+  padding-bottom: 3px;
+  
+  box-shadow: 0 2px 0 #494a4b;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  background-color: #61dafb; 
+  display: block;
+  margin: 3rem; 
+}
+
+.nav-logo-button span {
+  background: #f1f5f8;
+  display: block;
+  padding: 0.75rem 1.25rem; 
+  line-height: 1;           
+  
+  border: 2px solid #494a4b;
+  color: #333;
+  text-align: center;
+  font-weight: normal;
+}
+
+.nav-logo-button:hover {
+  transform: rotate(-5deg) scale(1.1);
+}
+
+.nav-logo-button:active {
+  transform: translateY(5px);
+  padding-bottom: 0px;
+  outline: 0;
+}
+
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .nav-menu {
+    flex-direction: column; 
+    width: 100%;
+    align-items: center; 
+  }
+
+  .nav-item {
+    margin: 0.75rem 0;
+  }
+
+
+  .nav-item:nth-child(1) .button:hover,
+  .nav-item:nth-child(2) .button:hover,
+  .nav-item:nth-child(3) .button:hover,
+  .nav-item:nth-child(4) .button:hover,
+  .nav-logo-button:hover {
+    transform: rotate(0deg) scale(1.05);
+  }
+
+  .button {
+     width: 240px; 
+  }
+}

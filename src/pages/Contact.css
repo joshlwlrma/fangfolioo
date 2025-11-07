@@ -1,0 +1,78 @@
+
+.contact-card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+
+.contact-card {
+  display: flex;
+  height: 70px;
+  width: 100%; 
+  max-width: 300px; 
+  background: #f1f5f8; 
+  border-radius: 10px; 
+  box-shadow: 0 2px 0 #494a4b;
+}
+
+
+.contact-card .social-link1,
+.contact-card .social-link2,
+.contact-card .social-link3,
+.contact-card .social-link4 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+  color: #333;
+  font-size: 28px;
+  text-decoration: none;
+  transition: 0.25s;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+.contact-card .social-link1:hover {
+  background-color: #333; 
+  color: whitesmoke;
+  animation: bounce_613 0.4s linear;
+}
+
+.contact-card .social-link2:hover {
+  background-color: #0a66c2; 
+  color: whitesmoke;
+  animation: bounce_613 0.4s linear;
+}
+
+.contact-card .social-link3:hover {
+  background-color: #D44638; 
+  color: whitesmoke;
+  animation: bounce_613 0.4s linear;
+}
+
+.contact-card .social-link4:hover {
+  background-color: #1877F2; 
+  color: whitesmoke;
+  animation: bounce_613 0.4s linear;
+}
+
+@keyframes bounce_613 {
+  40% {
+    transform: scale(1.4);
+  }
+
+  60% {
+    transform: scale(0.8);
+  }
+
+  80% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
