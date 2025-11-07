@@ -10,8 +10,7 @@ function About() {
       {/* This is the icon that shows first.
         It points to '/my-icon.png', which is in your 'public' folder.
       */}
-      <img src="/fangfolioid.png" className="card__icon" />
-      
+<img src={process.env.PUBLIC_URL + "/fangfolioid.png"} alt="About Me" className="card__icon" />      
       {/* This is the content that flips up on hover */}
       <div className="card__content">
         <p className="card__title">About Me</p>
