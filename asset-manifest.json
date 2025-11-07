@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/fangfolioo/static/css/main.3638b6b5.css",
-    "main.js": "/fangfolioo/static/js/main.6814abba.js",
+    "main.js": "/fangfolioo/static/js/main.bd8cf30c.js",
     "index.html": "/fangfolioo/index.html",
     "main.3638b6b5.css.map": "/fangfolioo/static/css/main.3638b6b5.css.map",
-    "main.6814abba.js.map": "/fangfolioo/static/js/main.6814abba.js.map"
+    "main.bd8cf30c.js.map": "/fangfolioo/static/js/main.bd8cf30c.js.map"
   },
   "entrypoints": [
     "static/css/main.3638b6b5.css",
-    "static/js/main.6814abba.js"
+    "static/js/main.bd8cf30c.js"
   ]
 }
