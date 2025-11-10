@@ -1,17 +1,11 @@
-// src/pages/About.js
-
 import React from 'react';
-import './About.css'; // <-- Import your new CSS file
+import './About.css'; 
 
 function About() {
   return (
     <div className="card">
-    
-      {/* This is the icon that shows first.
-        It points to '/my-icon.png', which is in your 'public' folder.
-      */}
+
 <img src={process.env.PUBLIC_URL + "/fangfolioid.png"} alt="About Me" className="card__icon" />      
-      {/* This is the content that flips up on hover */}
       <div className="card__content">
         <p className="card__title">About Me</p>
         <p className="card__description">
@@ -20,6 +14,17 @@ Currently a 3nd Year Student at Technological Institute of the Philippines, He i
 <br></br>Other hobbies and interests include playing Video Games such as Genshin Impact, Valorant, Mobile Legends and listening to Music and watching Dramas.
         </p>
       </div>
+
+<div className="stackcat">
+        <div className="cardcat">
+          <div className="imgcat">
+            <img 
+              src={process.env.PUBLIC_URL + "/fangcats.png"} 
+            />
+
+    </div>
+  </div>
+</div>
 
     </div>
   );
