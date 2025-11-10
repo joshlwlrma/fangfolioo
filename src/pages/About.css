@@ -98,64 +98,86 @@
     line-height: 1.4;
   }
 
-imgcat {
-  display: block;
-  max-width: 60%;
+.about-page-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 0;
+  gap: 2rem; /* Adds space between your two cards */
 }
 
-.stackcat {
-  width: 55%;
+
+/* --- Styles for your new Stack Card (Renamed to avoid conflict) --- */
+
+.stack {
+  width: 90%;
   max-width: 400px;
   transition: 0.25s ease;
-  &:hover {
-    transform: rotate(5deg);
-    .card:before {
-      transform: translatey(-2%) rotate(-4deg);
-    }
-    .cardcat:after {
-      transform: translatey(2%) rotate(4deg);
-    }
-  }
 }
 
-.cardcat {
+.stack:hover {
+  transform: rotate(3deg);
+}
+
+.stack-card {
   aspect-ratio: 3 / 2;
-  border: 4px solid;
-  background-color: #fff;
+  border: 4px solid #494a4b;
+  background-color: #f1f5f8;
   position: relative;
   transition: 0.15s ease;
   cursor: pointer;
-  padding: 5% 5% 15% 5%;
-  &:before,
-  &:after {
-    content: "";
-    display: block;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    border: 4px solid;
-    background-color: #fff;
-    transform-origin: center center;
-    z-index: -1;
-    transition: 0.15s ease;
-    top: 0;
-    left: 0;
-  }
-
-  &:before {
-    transform: translatey(-2%) rotate(-6deg);
-  }
-
-  &:after {
-    transform: translatey(2%) rotate(6deg);
-  }
+  padding: 5%;
+  box-sizing: border-box;
 }
-.imagecat {
+
+.stack-card:before,
+.stack-card:after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 100%;
   width: 100%;
-  border: 4px solid;
+  border: 4px solid #494a4b;
+  background-color: #f1f5f8;
+  transform-origin: center center;
+  z-index: -1;
+  transition: 0.15s ease;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+}
+
+.stack-card:before {
+  transform: translatey(-2%) rotate(-6deg);
+}
+
+.stack-card:after {
+  transform: translatey(2%) rotate(6deg);
+}
+
+.stack:hover .stack-card:before {
+  transform: translatey(-2%) rotate(-4deg);
+}
+
+.stack:hover .stack-card:after {
+  transform: translatey(2%) rotate(4deg);
+}
+
+.stack-image-container {
+  width: 100%;
+  border: 4px solid #494a4b;
   background-color: #eee;
   aspect-ratio: 1 / 1;
   position: relative;
+  overflow: hidden;
+}
+
+.stack-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 }
