@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/fangfolioo/static/css/main.bccfd57e.css",
-    "main.js": "/fangfolioo/static/js/main.ef764ad4.js",
+    "main.css": "/fangfolioo/static/css/main.3638b6b5.css",
+    "main.js": "/fangfolioo/static/js/main.bd8cf30c.js",
     "index.html": "/fangfolioo/index.html",
-    "main.bccfd57e.css.map": "/fangfolioo/static/css/main.bccfd57e.css.map",
-    "main.ef764ad4.js.map": "/fangfolioo/static/js/main.ef764ad4.js.map"
+    "main.3638b6b5.css.map": "/fangfolioo/static/css/main.3638b6b5.css.map",
+    "main.bd8cf30c.js.map": "/fangfolioo/static/js/main.bd8cf30c.js.map"
   },
   "entrypoints": [
-    "static/css/main.bccfd57e.css",
-    "static/js/main.ef764ad4.js"
+    "static/css/main.3638b6b5.css",
+    "static/js/main.bd8cf30c.js"
   ]
 }
